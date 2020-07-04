@@ -1,8 +1,12 @@
 # x68000x.github.io
-Quintus based platformer
------------------------
+Horizontal Shmup in GameBoy Resolution based on RADMARS engine
+----------------------------------------------------------------
 A Just-for-fun project by a non-programmer
 
-soon, more info at 
+
+Instructions:  Use a controller or keyboard
+
+Tips: Use bombs as shields
+
 
 http://x68000x.github.io
