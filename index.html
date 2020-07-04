@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>BLAST CAT</title>
+	<meta property='og:title' content="BLAST CAT" />
+	<meta property='og:description' content='BLAST CAT - Tactical Cat Pixel Shooter' />
+	<link rel="icon"
+		type="image/png"
+		href="data/image/favicon.png" />
+
+	<script src='libs/melonJS-3.1.0.js'></script>
+
+	<script src='src/main.js'></script>
+	<script src='src/Constant.js'></script>
+	<script src='src/GameResources.js'></script>
+	<script src='src/Loader.js'></script>
+	<script src='src/Screens/IntroScreen.js'></script>
+	<script src='src/Screens/PlayScreen.js'></script>
+	<script src='src/Screens/ControlScreen.js'></script>
+	<script src='src/Screens/TitleScreen.js'></script>
+	<script src='src/Screens/WinScreen.js'></script>
+	<script src='src/Screens/GameOverScreen.js'></script>
+	<script src='src/Screens/CreditsScreen.js'></script>
+	<script src='src/Path.js'></script>
+	<script src='src/PlayerEntity.js'></script>
+	<script src='src/Enemy.js'></script>
+	<script src='src/Enemy/Basic.js'></script>
+	<script src='src/Enemy/Boomer.js'></script>
+	<script src='src/Enemy/Shooter.js'></script>
+	<script src='src/Enemy/Spike.js'></script>
+	<script src='src/Enemy/Tank.js'></script>
+	
+	<script src='src/Enemy/Meat.js'></script>
+	<script src='src/Enemy/Pig.js'></script>
+	<script src='src/Enemy/Spider.js'></script>
+	<script src='src/Enemy/Fish.js'></script>
+	<script src='src/Enemy/Bird.js'></script>
+	
+	<script src='src/Boss.js'></script>
+
+	<script src='src/Boss/Final.js'></script>
+
+	<script src='src/Boss/dog1.js'></script>
+	<script src='src/Boss/dog2.js'></script>
+	<script src='src/Boss/dog3.js'></script>
+	<script src='src/Boss/dog4.js'></script>
+	<script src='src/Boss/dog5.js'></script>
+	
+	<script src='src/Boss/crab1.js'></script>
+	<script src='src/Boss/crab2.js'></script>
+	<script src='src/Boss/crab3.js'></script>
+	<script src='src/Boss/crab4.js'></script>
+	<script src='src/Boss/crab5.js'></script>
+	
+	
+	<script src='src/Boss/bear1.js'></script>
+	<script src='src/Boss/bear2.js'></script>
+	<script src='src/Boss/bear3.js'></script>
+	<script src='src/Boss/bear4.js'></script>
+	<script src='src/Boss/bear5.js'></script>
+
+
+
+	<script src='src/Bullet.js'></script>
+	<script src='src/Bullet/Player.js'></script>
+	<script src='src/Bullet/Shooter.js'></script>
+	<script src='src/Bullet/Spike.js'></script>
+	<script src='src/UI/LevelDisplay.js'></script>
+	<script src='src/UI/BombDisplay.js'></script>
+	
+	<script src='src/LevelChanger.js'></script>
+	<script src='src/Particle.js'></script>
+	<script src='src/Bomb.js'></script>
+
+	<style>
+	body{
+		background-color: #1f1f1f;
+		margin: 0 0;
+		width: 100%;
+		height: 100%;
+	}
+	canvas {
+		margin: auto auto;
+		display: block;
+	}
+	background: linear-gradient(270deg, #0a5adf, #d0ea00);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 7s ease infinite;
+-moz-animation: AnimationName 7s ease infinite;
+animation: AnimationName 7s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+	</style>
+</head>
+
+<body style=''>
+
+	<script type="text/javascript">
+	window.onReady(function onReady() {
+		GBGJ.preload();
+
+		// Mobile browser hacks
+		if (me.device.isMobile && !navigator.isCocoonJS) {
+			// Prevent the webview from moving on a swipe
+			window.document.addEventListener("touchmove", function (e) {
+				e.preventDefault();
+				window.scroll(0, 0);
+				return false;
+			}, false);
+		}
+	});
+	</script>
+</body>
+
+</html>
