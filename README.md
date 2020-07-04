@@ -1,6 +1,7 @@
 # x68000x.github.io
-Horizontal Shmup in GameBoy Resolution based on RADMARS engine
-----------------------------------------------------------------
+Horizontal Shmup in GameBoy Resolution based on RADMARS engine using MelonJS
+----------------------------------------------------------------------------
+
 A Just-for-fun project by a non-programmer
 
 
