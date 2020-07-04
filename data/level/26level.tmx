@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="v1.0.3-399-ge7b903e" orientation="orthogonal" renderorder="right-down" width="500" height="16" tilewidth="16" tileheight="16" infinite="0" nextobjectid="525">
+ <tileset firstgid="1" name="tilemap" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+  <image source="../image/tilemap.png" width="256" height="256"/>
+ </tileset>
+ <imagelayer name="Parallax_layer1" opacity="0.3" offsetx="8" offsety="333">
+  <image source="../image/bg26.png" width="160" height="144"/>
+  <properties>
+   <property name="ratio" value="1"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="Parallax_layer2" offsetx="12" offsety="2">
+  <image source="../image/bg26b.png" width="160" height="144"/>
+  <properties>
+   <property name="ratio" type="float" value="0.5"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="Parallax_layer3" opacity="0.3" offsetx="16" offsety="3">
+  <image source="../image/bg26.png" width="160" height="144"/>
+  <properties>
+   <property name="ratio" value="1.44"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="Parallax_layer4" opacity="0.3" offsetx="13" offsety="0">
+  <image source="../image/bg26.png" width="160" height="144"/>
+  <properties>
+   <property name="ratio" value="1.13"/>
+  </properties>
+ </imagelayer>
+ <objectgroup name="entities">
+  <object id="1" name="Player" x="28.5" y="67" width="16" height="16"/>
+  <object id="96" name="Path" type="EnemyBasic" x="810.657" y="119.266">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="97" name="Path" type="EnemyBoomer" x="1713.88" y="107.837">
+   <polyline points="3.33333,-53.3333 -22,-30 -160.333,-16.3333"/>
+  </object>
+  <object id="98" name="Bear3" type="EnemyBoomer" x="2701.57" y="135.457">
+   <polyline points="-45.9597,71.1965 -68.6987,-0.164743 -166.819,30.3654"/>
+  </object>
+  <object id="198" name="Path" type="EnemyBoomer" x="3937.07" y="167.095">
+   <polyline points="0,0 -166,1"/>
+  </object>
+  <object id="228" name="Path" type="EnemyBird" x="819.375" y="191.106" rotation="56">
+   <polyline points="0,0 -185.007,0"/>
+  </object>
+  <object id="240" name="Path" type="EnemyBoomer" x="2079.2" y="175.523">
+   <polyline points="0,0 -130.82,0"/>
+  </object>
+  <object id="241" name="Path" type="EnemyBoomer" x="1735.57" y="164.943">
+   <polyline points="0,0 -119.797,0"/>
+  </object>
+  <object id="242" name="Path" type="EnemyTank" x="4896.56" y="173.918">
+   <polyline points="0,0 -133.025,0"/>
+  </object>
+  <object id="273" name="LevelChanger" x="7837.74" y="18.6607" width="139.335" height="219.785">
+   <properties>
+    <property name="nextLevel" value="27finalboss18"/>
+   </properties>
+  </object>
+  <object id="275" name="Bomb" x="905.52" y="57.0179" width="11.5" height="11"/>
+  <object id="276" name="Bomb" x="513.294" y="157.477" width="11.5" height="11"/>
+  <object id="277" name="Bomb" x="1374.1" y="119.754" width="11.5" height="11"/>
+  <object id="278" name="Bomb" x="3467.49" y="75.6816" width="11.5" height="11"/>
+  <object id="279" name="Crab3" x="721.566" y="195.962">
+   <polyline points="0,0 -55.9725,0"/>
+  </object>
+  <object id="280" name="Crab3" x="761.272" y="207.608">
+   <polyline points="0,0 -31.806,0"/>
+  </object>
+  <object id="281" name="Crab3" x="738.303" y="202.013">
+   <polyline points="0,0 -40.7443,0"/>
+  </object>
+  <object id="283" name="Crab3" x="842.51" y="197.822">
+   <polyline points="0,0 -49.0205,0"/>
+  </object>
+  <object id="284" name="Crab3" x="823.276" y="202.664">
+   <polyline points="0,0 -61.2694,0"/>
+  </object>
+  <object id="285" name="Crab3" x="951.705" y="209.723">
+   <polyline points="0,0 -62.2625,0"/>
+  </object>
+  <object id="286" name="Crab3" x="979.942" y="204.779">
+   <polyline points="0,0 -57.9589,0"/>
+  </object>
+  <object id="287" name="Crab3" x="920.459" y="204.128">
+   <polyline points="0,0 -62.9246,0"/>
+  </object>
+  <object id="288" name="Crab3" x="1023.01" y="199.937">
+   <polyline points="0,0 -69.5456,0"/>
+  </object>
+  <object id="289" name="Crab3" x="880.218" y="198.077">
+   <polyline points="0,0 -54.6484,0"/>
+  </object>
+  <object id="290" name="Crab3" x="1070.1" y="207.315">
+   <polyline points="0,0 -61.2694,0"/>
+  </object>
+  <object id="291" name="Crab3" x="1221.83" y="205.503">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="292" name="Crab3" x="1157.38" y="204.852">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="293" name="Crab3" x="1253.32" y="200.661">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="294" name="Crab3" x="1067.81" y="198.801">
+   <polyline points="0,0 -82.1255,0"/>
+  </object>
+  <object id="295" name="Crab3" x="1308.29" y="208.588">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="296" name="Crab3" x="1381.56" y="206.776">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="297" name="Crab3" x="1317.11" y="206.125">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="298" name="Crab3" x="1413.05" y="201.934">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="299" name="Crab3" x="1285.15" y="200.074">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="300" name="Crab3" x="1698.55" y="212.761">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="301" name="Crab3" x="1731.09" y="207.817">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="302" name="Crab3" x="1666.64" y="207.166">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="303" name="Crab3" x="1762.58" y="202.975">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="304" name="Crab3" x="1634.68" y="201.115">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="305" name="Crab3" x="1817.55" y="211.538">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="306" name="Crab3" x="1890.82" y="209.727">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="307" name="Crab3" x="1826.37" y="209.076">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="308" name="Crab3" x="1922.31" y="204.885">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="309" name="Crab3" x="1794.41" y="203.025">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="310" name="Crab3" x="1977.13" y="211.892">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="311" name="Crab3" x="2050.4" y="210.081">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="312" name="Crab3" x="1985.95" y="209.43">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="313" name="Crab3" x="2081.89" y="205.239">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="314" name="Crab3" x="1953.99" y="203.379">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="315" name="Crab3" x="4133.84" y="195.391">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="316" name="Crab3" x="4166.38" y="190.447">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="317" name="Crab3" x="4101.93" y="189.796">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="318" name="Crab3" x="4197.87" y="185.605">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="319" name="Crab3" x="4069.97" y="183.745">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="320" name="Crab3" x="4294.4" y="196.716">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="321" name="Crab3" x="4326.94" y="191.772">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="322" name="Crab3" x="4262.49" y="191.121">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="323" name="Crab3" x="4358.43" y="186.93">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="324" name="Crab3" x="4230.53" y="185.07">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="325" name="Crab3" x="4454.95" y="197.378">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="326" name="Crab3" x="4487.49" y="192.434">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="328" name="Crab3" x="4518.98" y="187.592">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="329" name="Crab3" x="4391.08" y="185.732">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="330" name="Crab3" x="4836" y="199.261">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="331" name="Crab3" x="4868.54" y="194.317">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="332" name="Crab3" x="4804.09" y="193.666">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="333" name="Crab3" x="4900.03" y="189.475">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="334" name="Crab3" x="4772.13" y="187.615">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="335" name="Crab3" x="4995.9" y="200.917">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="336" name="Crab3" x="5028.44" y="195.973">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="337" name="Crab3" x="4963.99" y="195.322">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="338" name="Crab3" x="5059.93" y="191.131">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="339" name="Crab3" x="4932.03" y="189.271">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="340" name="Crab3" x="5155.13" y="201.91">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="341" name="Crab3" x="5187.67" y="196.966">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="342" name="Crab3" x="5123.22" y="196.315">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="343" name="Crab3" x="5219.16" y="192.124">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="344" name="Crab3" x="5091.26" y="190.264">
+   <polyline points="0,0 -139.728,0"/>
+  </object>
+  <object id="347" name="Path" type="EnemyPig" x="470.667" y="160">
+   <polyline points="3.33333,-53.3333 -22,-30 -160.333,-16.3333"/>
+  </object>
+  <object id="348" name="Path" type="EnemyPig" x="446.667" y="132">
+   <polyline points="3.33333,-53.3333 -22,-30 -160.333,-16.3333"/>
+  </object>
+  <object id="349" name="Path" type="EnemyPig" x="871.436" y="135.826">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="350" name="Path" type="EnemyMeat" x="944.056" y="138.515">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="351" name="Path" type="EnemyPig" x="1015.33" y="146.584">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="352" name="Path" type="EnemyMeat" x="1303.55" y="82.8805">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="353" name="Path" type="EnemyPig" x="1089.3" y="138.515">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="354" name="Path" type="EnemyMeat" x="1329.56" y="124.644">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="356" name="Path" type="EnemyPig" x="1359.6" y="151.579">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="357" name="Path" type="EnemyPig" x="1498.12" y="127.757">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="358" name="Path" type="EnemyPig" x="1506.19" y="143.895">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="359" name="Path" type="EnemyPig" x="1479.29" y="116.998">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="360" name="Path" type="EnemyPig" x="1507.53" y="162.722">
+   <polyline points="3.33333,-53.3333 -34.1033,-9.82786 -132.092,-0.195592"/>
+  </object>
+  <object id="361" name="Path" type="EnemyPig" x="322.754" y="192.308">
+   <polyline points="-22.218,-43.9196 -70.4131,3.62023 -129.402,-33.8158"/>
+  </object>
+  <object id="363" name="Path" type="EnemyPig" x="363.098" y="194.997">
+   <polyline points="-22.218,-43.9196 -70.4131,3.62023 -129.402,-33.8158"/>
+  </object>
+  <object id="364" name="Path" type="EnemyPig" x="438.408" y="188.273">
+   <polyline points="-22.218,-43.9196 -70.4131,3.62023 -129.402,-33.8158"/>
+  </object>
+  <object id="365" name="Path" type="EnemyPig" x="481.442" y="188.273">
+   <polyline points="-22.218,-43.9196 -70.4131,3.62023 -129.402,-33.8158"/>
+  </object>
+  <object id="366" name="Path" type="EnemyMeat" x="2332.23" y="142.839">
+   <polyline points="0.408498,-28.4722 -87.8087,-34.3872 -160.333,-16.3333"/>
+  </object>
+  <object id="368" name="Path" type="EnemyMeat" x="2170.23" y="125.768">
+   <polyline points="0.408498,-28.4722 -87.8087,-34.3872 -160.333,-16.3333"/>
+  </object>
+  <object id="369" name="Path" type="EnemyMeat" x="2059.08" y="102.369">
+   <polyline points="0.408498,-28.4722 -87.8087,-34.3872 -160.333,-16.3333"/>
+  </object>
+  <object id="370" name="Path" type="EnemyMeat" x="2259.43" y="130.155">
+   <polyline points="0.408498,-28.4722 -87.8087,-34.3872 -160.333,-16.3333"/>
+  </object>
+  <object id="371" name="Path" type="EnemyPig" x="5466.71" y="104.518">
+   <polyline points="18.2541,-70.8687 -108.589,0"/>
+  </object>
+  <object id="372" name="Path" type="EnemyPig" x="5499.71" y="115.745">
+   <polyline points="20.6021,-28.6053 -108.589,0"/>
+  </object>
+  <object id="373" name="Path" type="EnemyBoomer" x="5520.08" y="144.4">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="374" name="Path" type="EnemyPig" x="5505.99" y="171.402">
+   <polyline points="-0.529613,28.9199 -108.589,0"/>
+  </object>
+  <object id="375" name="Path" type="EnemyBoomer" x="5739.12" y="148.689">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="376" name="Path" type="EnemyPig" x="5644.52" y="120.92">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="377" name="Path" type="EnemyPig" x="5843.91" y="182.743">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="378" name="Path" type="EnemyPig" x="5978.76" y="141.74">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="379" name="Path" type="EnemyPig" x="6005.16" y="81.0512">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="380" name="Path" type="EnemyPig" x="6209.01" y="139.998">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="381" name="Path" type="EnemyPig" x="6302.35" y="186.663">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="382" name="Path" type="EnemyPig" x="6244.63" y="73.6829">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="383" name="Path" type="EnemyPig" x="6442.34" y="98.2439">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="384" name="Path" type="EnemyPig" x="6442.34" y="112.98">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="385" name="Path" type="EnemyBoomer" x="6443.57" y="127.717">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="386" name="Path" type="EnemyPig" x="6442.34" y="144.91">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="387" name="Path" type="EnemyPig" x="6443.57" y="162.102">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="388" name="Path" type="EnemyPig" x="6443.57" y="178.067">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="389" name="Path" type="EnemyPig" x="6636.37" y="49.1219">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="390" name="Path" type="EnemyPig" x="6637.6" y="60.1744">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="391" name="Path" type="EnemyPig" x="6638.83" y="73.6829">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="392" name="Path" type="EnemyPig" x="6640.06" y="87.1915">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="393" name="Path" type="EnemyPig" x="6624.09" y="223.505">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="394" name="Path" type="EnemyPig" x="6617.95" y="213.68">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="395" name="Path" type="EnemyPig" x="6624" y="208">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="396" name="Path" type="EnemyPig" x="6631.46" y="200.172">
+   <polyline points="28.82,-1.60366 -108.589,0"/>
+  </object>
+  <object id="397" name="Path" type="EnemyPig" x="6813.75" y="201.164">
+   <polyline points="13.881,-1.60366 -52.3012,0"/>
+  </object>
+  <object id="398" name="Path" type="EnemyPig" x="6694.4" y="186.663">
+   <polyline points="6.41146,-1.60366 -24.1573,0"/>
+  </object>
+  <object id="399" name="Path" type="EnemyPig" x="6713.74" y="197.716">
+   <polyline points="6.41146,-1.60366 -24.1573,0"/>
+  </object>
+  <object id="400" name="Path" type="EnemyPig" x="6770.23" y="176.839">
+   <polyline points="6.41146,-1.60366 -24.1573,0"/>
+  </object>
+  <object id="401" name="Path" type="EnemyBoomer" x="6923.74" y="79.8232">
+   <polyline points="6.41146,-1.60366 -24.1573,0"/>
+  </object>
+  <object id="402" name="Path" type="EnemyPig" x="6923.74" y="94.5597">
+   <polyline points="6.41146,-1.60366 -24.1573,0"/>
+  </object>
+  <object id="403" name="Path" type="EnemyPig" x="6923.74" y="110.524">
+   <polyline points="6.41146,-1.60366 -24.1573,0"/>
+  </object>
+  <object id="404" name="Path" type="EnemyPig" x="6922.51" y="126.489">
+   <polyline points="6.41146,-1.60366 -24.1573,0"/>
+  </object>
+  <object id="405" name="Path" type="EnemyPig" x="6982.68" y="206.312">
+   <polyline points="6.41146,-1.60366 -24.1573,0"/>
+  </object>
+  <object id="406" name="Path" type="EnemyPig" x="7007.25" y="195.26">
+   <polyline points="6.41146,-1.60366 -24.1573,0"/>
+  </object>
+  <object id="407" name="Path" type="EnemyPig" x="7024.44" y="169.471">
+   <polyline points="6.41146,-1.60366 -24.1573,0"/>
+  </object>
+  <object id="408" name="Path" type="EnemyPig" x="7007.25" y="146.138">
+   <polyline points="6.41146,-1.60366 -24.1573,0"/>
+  </object>
+  <object id="409" name="Path" type="EnemyPig" x="6977.77" y="144.91">
+   <polyline points="6.41146,-0.0160366 -24.1573,0"/>
+  </object>
+  <object id="410" name="Path" type="EnemyPig" x="7168.97" y="49.1219">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="412" name="Path" type="EnemyPig" x="7180.4" y="66.3146">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="413" name="Path" type="EnemyPig" x="7198.85" y="76.0639">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="414" name="Path" type="EnemyPig" x="7199.64" y="110.764">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="416" name="Path" type="EnemyPig" x="7200.19" y="130.139">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="417" name="Path" type="EnemyPig" x="7200.19" y="155.68">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="418" name="Path" type="EnemyPig" x="7289.79" y="164.938">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="419" name="Path" type="EnemyPig" x="7289.79" y="139.397">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="420" name="Path" type="EnemyBoomer" x="7289.24" y="120.022">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="421" name="Path" type="EnemyPig" x="7288.45" y="85.322">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="422" name="Path" type="EnemyPig" x="7270" y="75.5727">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="423" name="Path" type="EnemyPig" x="7258.57" y="58.38">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="424" name="Path" type="EnemyPig" x="7379.8" y="169.803">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="425" name="Path" type="EnemyPig" x="7379.8" y="144.262">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="426" name="Path" type="EnemyPig" x="7379.25" y="124.887">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="427" name="Path" type="EnemyPig" x="7378.46" y="90.187">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="428" name="Path" type="EnemyPig" x="7360.01" y="80.4377">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="429" name="Path" type="EnemyPig" x="7348.58" y="63.245">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="430" name="Path" type="EnemyPig" x="7584.13" y="166.154">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="431" name="Path" type="EnemyPig" x="7584.13" y="140.613">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="432" name="Path" type="EnemyBoomer" x="7583.58" y="121.238">
+   <polyline points="20.8323,58.8321 -43.4242,31.9293"/>
+  </object>
+  <object id="433" name="Path" type="EnemyPig" x="7582.79" y="86.5382">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="434" name="Path" type="EnemyPig" x="7564.34" y="76.7889">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="435" name="Path" type="EnemyBoomer" x="7552.91" y="59.5962">
+   <polyline points="25.214,-1.60366 -43.4242,31.9293"/>
+  </object>
+  <object id="436" name="Bear3" type="EnemyBoomer" x="2829.66" y="142.671">
+   <polyline points="-45.9597,71.1965 -68.6987,-0.164743 -166.819,30.3654"/>
+  </object>
+  <object id="437" name="Bear3" type="EnemyBoomer" x="2959.2" y="144.701">
+   <polyline points="-45.9597,71.1965 -68.6987,-0.164743 -166.819,30.3654"/>
+  </object>
+  <object id="438" name="Path" type="EnemyBoomer" x="2944.86" y="65.1806">
+   <polyline points="0,0 -55.1931,1"/>
+  </object>
+  <object id="440" name="Path" type="EnemyBoomer" x="2977.45" y="93.86">
+   <polyline points="0,0 -55.1931,1"/>
+  </object>
+  <object id="441" name="Path" type="EnemyBoomer" x="2980.05" y="127.754">
+   <polyline points="0,0 -55.1931,1"/>
+  </object>
+  <object id="442" name="Path" type="EnemyBoomer" x="3094.77" y="204.667">
+   <polyline points="0,0 -55.1931,1"/>
+  </object>
+  <object id="443" name="Path" type="EnemyBoomer" x="3165.17" y="204.667">
+   <polyline points="0,0 -55.1931,1"/>
+  </object>
+  <object id="444" name="Path" type="EnemyBoomer" x="3239.47" y="204.667">
+   <polyline points="0,0 -55.1931,1"/>
+  </object>
+  <object id="445" name="Path" type="EnemyBoomer" x="3086.95" y="49.5372">
+   <polyline points="0,0 -55.1931,1"/>
+  </object>
+  <object id="446" name="Path" type="EnemyBoomer" x="3163.86" y="49.5372">
+   <polyline points="0,0 -55.1931,1"/>
+  </object>
+  <object id="447" name="Path" type="EnemyBoomer" x="3238.17" y="49.5372">
+   <polyline points="0,0 -55.1931,1"/>
+  </object>
+  <object id="448" name="Path" type="EnemyBoomer" x="3489.77" y="109.503">
+   <polyline points="0,0 -30.4245,1"/>
+  </object>
+  <object id="449" name="Path" type="EnemyBoomer" x="3483.25" y="44.3228">
+   <polyline points="0,0 -30.4245,1"/>
+  </object>
+  <object id="450" name="Path" type="EnemyBoomer" x="3552.34" y="88.6455">
+   <polyline points="0,0 -30.4245,1"/>
+  </object>
+  <object id="451" name="Path" type="EnemyBoomer" x="3431.1" y="93.86">
+   <polyline points="0,0 -30.4245,1"/>
+  </object>
+  <object id="452" name="Path" type="EnemyMeat" x="3498.89" y="198.149">
+   <polyline points="0,0 -30.4245,1"/>
+  </object>
+  <object id="453" name="Path" type="EnemyMeat" x="3578.41" y="157.737">
+   <polyline points="0,0 -30.4245,1"/>
+  </object>
+  <object id="454" name="Path" type="EnemyMeat" x="3660.54" y="125.147">
+   <polyline points="0,0 -30.4245,1"/>
+  </object>
+  <object id="455" name="Path" type="EnemyMeat" x="3724.42" y="95.1636">
+   <polyline points="0,0 -30.4245,1"/>
+  </object>
+  <object id="456" name="Path" type="EnemyMeat" x="3781.78" y="63.8769">
+   <polyline points="0,0 -30.4245,1"/>
+  </object>
+  <object id="457" name="Path" type="EnemyPig" x="259.152" y="77.4498">
+   <polyline points="-0.569732,-8.44059 -26.6127,4.68551 -52.1117,-8.96922"/>
+  </object>
+  <object id="458" name="Path" type="EnemyPig" x="245.388" y="205.267">
+   <polyline points="-0.569732,-8.44059 -26.6127,4.68551 -52.1117,-8.96922"/>
+  </object>
+  <object id="459" name="Path" type="EnemyPig" x="181.772" y="202.721">
+   <polyline points="-0.569732,-8.44059 -26.6127,4.68551 -52.1117,-8.96922"/>
+  </object>
+  <object id="460" name="Path" type="EnemyPig" x="224.427" y="112.137">
+   <polyline points="-0.569732,-8.44059 -26.6127,4.68551 -52.1117,-8.96922"/>
+  </object>
+  <object id="461" name="Path" type="EnemyPig" x="531.26" y="202.292">
+   <polyline points="-0.569732,-8.44059 -26.6127,4.68551 -52.1117,-8.96922"/>
+  </object>
+  <object id="462" name="Path" type="EnemyPig" x="566.339" y="189.429">
+   <polyline points="-0.569732,-8.44059 -26.6127,4.68551 -52.1117,-8.96922"/>
+  </object>
+  <object id="463" name="Path" type="EnemyPig" x="601.029" y="174.228">
+   <polyline points="-0.569732,-8.44059 -26.6127,4.68551 -52.1117,-8.96922"/>
+  </object>
+  <object id="464" name="Path" type="EnemyPig" x="639.616" y="158.637">
+   <polyline points="-0.569732,-8.44059 -26.6127,4.68551 -52.1117,-8.96922"/>
+  </object>
+  <object id="465" name="Path" type="EnemyPig" x="524.244" y="95.4942">
+   <polyline points="-0.569732,-8.44059 -27.0025,-22.2088 -52.1117,-8.96922"/>
+  </object>
+  <object id="467" name="Path" type="EnemyPig" x="561.662" y="108.746">
+   <polyline points="-0.569732,-8.44059 -27.0025,-22.2088 -52.1117,-8.96922"/>
+  </object>
+  <object id="468" name="Path" type="EnemyPig" x="597.131" y="127.066">
+   <polyline points="-0.569732,-8.44059 -27.0025,-22.2088 -52.1117,-8.96922"/>
+  </object>
+  <object id="469" name="Path" type="EnemyPig" x="630.652" y="148.893">
+   <polyline points="-0.569732,-8.44059 -27.0025,-22.2088 -52.1117,-8.96922"/>
+  </object>
+  <object id="470" name="Path" type="EnemyPig" x="2372.54" y="217.103">
+   <polyline points="-0.569732,-8.44059 -27.0025,-22.2088 -52.1117,-8.96922"/>
+  </object>
+  <object id="471" name="Path" type="EnemyPig" x="2404.9" y="183.583">
+   <polyline points="-0.569732,-8.44059 -27.0025,-22.2088 -52.1117,-8.96922"/>
+  </object>
+  <object id="472" name="Path" type="EnemyPig" x="2417.76" y="65.4818">
+   <polyline points="129.614,12.6071 -27.0025,1.95709 -52.1117,-8.96922"/>
+  </object>
+  <object id="473" name="Path" type="EnemyPig" x="2402.56" y="44.0443">
+   <polyline points="129.614,12.6071 -27.0025,1.95709 -52.1117,-8.96922"/>
+  </object>
+  <object id="474" name="Path" type="EnemyPig" x="2434.52" y="88.0886">
+   <polyline points="129.614,12.6071 -27.0025,1.95709 -52.1117,-8.96922"/>
+  </object>
+  <object id="475" name="Path" type="EnemyPig" x="3348.14" y="172.279">
+   <polyline points="-29.8029,40.6707 -19.5968,1.95709 -28.7254,-72.8919"/>
+  </object>
+  <object id="476" name="Path" type="EnemyPig" x="3324.76" y="175.008">
+   <polyline points="-29.8029,40.6707 -10.2423,1.56732 -28.7254,-72.8919"/>
+  </object>
+  <object id="477" name="Path" type="EnemyPig" x="3309.17" y="180.075">
+   <polyline points="-29.8029,40.6707 -19.5968,1.95709 -28.7254,-72.8919"/>
+  </object>
+  <object id="478" name="Path" type="EnemyPig" x="4542.41" y="137.2">
+   <polyline points="-29.8029,40.6707 2.62023,7.80368 -28.3356,-45.9976"/>
+  </object>
+  <object id="479" name="Path" type="EnemyPig" x="4563.84" y="157.468">
+   <polyline points="-29.8029,40.6707 2.62023,7.80368 -28.3356,-45.9976"/>
+  </object>
+  <object id="480" name="Path" type="EnemyPig" x="4592.69" y="175.398">
+   <polyline points="-29.8029,40.6707 2.62023,7.80368 -28.3356,-45.9976"/>
+  </object>
+  <object id="481" name="Path" type="EnemyPig" x="5261.54" y="81.2925">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="482" name="Path" type="EnemyPig" x="5268.94" y="90.0374">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="483" name="Path" type="EnemyPig" x="5276.35" y="97.8329">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="484" name="Path" type="EnemyPig" x="5372.62" y="188.26">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="485" name="Path" type="EnemyPig" x="5381.39" y="170.971">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="486" name="Path" type="EnemyPig" x="5391.99" y="158.936">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="487" name="Path" type="EnemyPig" x="5819" y="127.873">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="488" name="Path" type="EnemyPig" x="5835.44" y="144.229">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="489" name="Path" type="EnemyPig" x="5853.12" y="143.827">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="490" name="Path" type="EnemyPig" x="5868.39" y="127.355">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="491" name="Path" type="EnemyPig" x="5964" y="192.439">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="492" name="Path" type="EnemyPig" x="5980.07" y="192.037">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="493" name="Path" type="EnemyPig" x="6092.16" y="145.434">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="494" name="Path" type="EnemyPig" x="6285.4" y="145.032">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="495" name="Path" type="EnemyPig" x="6301.07" y="112.089">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="496" name="Path" type="EnemyPig" x="6317.27" y="80.9119">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="497" name="Path" type="EnemyPig" x="6109.15" y="192.001">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="498" name="Path" type="EnemyPig" x="6187.48" y="192.569">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="499" name="Path" type="EnemyPig" x="6141.06" y="80.7137">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="500" name="Path" type="EnemyPig" x="6521.05" y="114.017">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="501" name="Path" type="EnemyPig" x="6539.72" y="112.839">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="502" name="Path" type="EnemyPig" x="6830.69" y="146.415">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="503" name="Path" type="EnemyPig" x="6845.28" y="161.509">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="504" name="Path" type="EnemyPig" x="6921.45" y="182.642">
+   <polyline points="-9.36377,29.1475 -8.97376,2.51995 -8.90276,-32.9651"/>
+  </object>
+  <object id="505" name="Path" type="EnemyPig" x="6836.23" y="190.692">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="506" name="Path" type="EnemyPig" x="6876.48" y="80">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="507" name="Path" type="EnemyPig" x="6892.58" y="64.9057">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="508" name="Path" type="EnemyPig" x="7068.18" y="81.0063">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="509" name="Path" type="EnemyPig" x="7069.18" y="191.698">
+   <polyline points="-29.8029,29.1475 -28.5616,2.51995 -28.3356,-32.9651"/>
+  </object>
+  <object id="510" name="Path" type="EnemyPig" x="7454.09" y="200.67">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="511" name="Path" type="EnemyPig" x="7467.67" y="201.258">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="512" name="Path" type="EnemyPig" x="7483.27" y="200.755">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="513" name="Path" type="EnemyPig" x="7500.38" y="200.252">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="514" name="Path" type="EnemyPig" x="7516.48" y="198.742">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="515" name="Path" type="EnemyPig" x="7533.58" y="199.748">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="516" name="Path" type="EnemyPig" x="7548.16" y="198.718">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="517" name="Path" type="EnemyPig" x="8760.01" y="76.4398">
+   <polyline points="-1348.45,20.1753 -1292.28,1.74426 -1282.06,-22.8178"/>
+  </object>
+  <object id="518" name="Path" type="EnemyPig" x="7773.3" y="201.571">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="519" name="Path" type="EnemyPig" x="7772.25" y="60.2094">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="520" name="Path" type="EnemyPig" x="7739.27" y="102.102">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="521" name="Path" type="EnemyPig" x="7738.03" y="171.648">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="522" name="Path" type="EnemyPig" x="7803.58" y="127.764">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="523" name="Path" type="EnemyPig" x="7803.58" y="127.764">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+  <object id="524" name="Path" type="EnemyPig" x="7803.58" y="127.764">
+   <polyline points="-29.8029,20.1753 -28.5616,1.74426 -28.3356,-22.8178"/>
+  </object>
+ </objectgroup>
+ <layer name="edge tiles" width="500" height="16">
+  <data encoding="base64">
+   AwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAAAAAAAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAoQAAQKEAAEChAABAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAChAAAAoQAAAKEAAAAAAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAA=
+  </data>
+ </layer>
+ <objectgroup color="#ff0000" name="collision layer" opacity="0.79">
+  <object id="16" x="6" y="-17.4482" width="7996.05" height="41.8565"/>
+  <object id="33" x="0.666663" y="0" width="15.3333" height="254.905"/>
+  <object id="272" x="7982.36" y="-1.60497" width="15.3333" height="255.519"/>
+  <object id="345" x="1.56694" y="234.644" width="7996.05" height="32.1053"/>
+ </objectgroup>
+</map>

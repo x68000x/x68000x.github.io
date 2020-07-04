@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="v1.0.3-399-ge7b903e" orientation="orthogonal" renderorder="right-down" width="40" height="16" tilewidth="16" tileheight="16" infinite="0" nextobjectid="280">
+ <tileset firstgid="1" name="tilemap" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+  <image source="../image/tilemap.png" width="256" height="256"/>
+ </tileset>
+ <imagelayer name="Parallax_layer1">
+  <image source="../image/bg21.png" width="160" height="144"/>
+  <properties>
+   <property name="ratio" value="0.75"/>
+  </properties>
+ </imagelayer>
+ <objectgroup name="entities">
+  <object id="1" name="Player" x="28.5" y="67" width="16" height="16"/>
+  <object id="15" name="Dog3" x="589.956" y="19.468" width="72" height="72">
+   <properties>
+    <property name="nextLevel" value="22pathlevel"/>
+   </properties>
+  </object>
+  <object id="38" name="Path" type="EnemySpider" x="244.273" y="206.864">
+   <polyline points="3.33333,-53.3333 -22,-30 -160.333,-16.3333"/>
+  </object>
+  <object id="51" name="Path" type="EnemySpider" x="576.5" y="106">
+   <polyline points="3.33333,-53.3333 -22,-30 -160.333,-16.3333"/>
+  </object>
+  <object id="52" name="Path" type="EnemySpider" x="572" y="95.5">
+   <polyline points="3.33333,-53.3333 -22,-30 -84.333,-21.3333"/>
+  </object>
+  <object id="94" name="Path" type="EnemySpider" x="238.5" y="114">
+   <polyline points="3.33333,-53.3333 -22,-30 -160.333,-16.3333"/>
+  </object>
+  <object id="95" name="Path" type="EnemySpider" x="234" y="104">
+   <polyline points="3.33333,-53.3333 -22,-30 -160.333,-16.3333"/>
+  </object>
+  <object id="96" name="Path" type="EnemySpider" x="229" y="95">
+   <polyline points="3.33333,-53.3333 -22,-30 -160.333,-16.3333"/>
+  </object>
+  <object id="97" name="Path" type="EnemySpider" x="223.5" y="85.5">
+   <polyline points="3.33333,-53.3333 -22,-30 -160.333,-16.3333"/>
+  </object>
+  <object id="98" name="Path" type="EnemySpider" x="217" y="78">
+   <polyline points="3.33333,-53.3333 -22,-30 -160.333,-16.3333"/>
+  </object>
+  <object id="108" name="Path" type="EnemySpike" x="258" y="125.5">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="109" name="Path" type="EnemySpider" x="253" y="110.5">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="110" name="Path" type="EnemySpider" x="255" y="134">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="117" name="Path" type="EnemyShooter" x="376.693" y="153.366">
+   <polyline points="-37.0986,-9.80306 -47.9644,1.44636 -91.9426,19.6062 -102.23,76.7374"/>
+  </object>
+  <object id="118" name="Path" type="EnemySpider" x="542.733" y="92.2324">
+   <polyline points="-58.9844,-12.4239 -76.2603,1.83304 -146.183,24.8479 -162.539,97.2532"/>
+  </object>
+  <object id="119" name="Path" type="EnemySpider" x="402.036" y="65.9481">
+   <polyline points="-47.9238,-12.2367 -61.9602,1.80542 -118.771,24.4735 -132.06,95.7878"/>
+  </object>
+  <object id="120" name="Path" type="EnemySpider" x="433.5" y="90">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="121" name="Path" type="EnemySpider" x="381" y="133.5">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="122" name="Path" type="EnemySpider" x="390.5" y="112.5">
+   <polyline points="0,0 -69.5,0"/>
+  </object>
+  <object id="126" name="Path" type="EnemySpider" x="533" y="48">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="127" name="Path" type="EnemySpider" x="503" y="66.5">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="129" name="Path" type="EnemySpider" x="465" y="24">
+   <polyline points="0,0 -42,24 -80.5,30.5 -109.5,19 -133.5,36 -144.5,97.5"/>
+  </object>
+  <object id="131" name="Path" type="EnemySpider" x="470" y="35">
+   <polyline points="0,0 -42,24 -80.5,30.5 -109.5,19 -133.5,36 -144.5,97.5"/>
+  </object>
+  <object id="133" name="Path" type="EnemySpider" x="302.5" y="53.5">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="134" name="Path" type="EnemySpider" x="299.5" y="62">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="136" name="Path" type="EnemySpider" x="483.5" y="51.5">
+   <polyline points="0,0 -42,24 -80.5,30.5 -109.5,19 -133.5,36 -144.5,97.5"/>
+  </object>
+  <object id="137" name="Path" type="EnemySpider" x="498.5" y="228">
+   <polyline points="0,0 -10.5,-79.5 -35,-103.5 -60,-109"/>
+  </object>
+  <object id="139" name="Path" type="EnemySpider" x="635.5" y="142.5">
+   <polyline points="0,0 -10.5,-79.5 -35,-103.5 -60,-109"/>
+  </object>
+  <object id="140" name="Path" type="EnemySpider" x="343.963" y="175.576">
+   <polyline points="0,0 -10.5,-79.5 -35,-103.5 -60,-109"/>
+  </object>
+  <object id="194" name="Path" type="EnemySpider" x="301.5" y="91.5">
+   <polyline points="0,0 -166,1"/>
+  </object>
+  <object id="195" name="Path" type="EnemySpider" x="323.5" y="144.5">
+   <polyline points="0,0 -166,1"/>
+  </object>
+  <object id="196" name="Path" type="EnemySpider" x="364" y="105">
+   <polyline points="0,0 -166,1"/>
+  </object>
+  <object id="197" name="Path" type="EnemySpider" x="330.5" y="117">
+   <polyline points="0,0 -166,1"/>
+  </object>
+  <object id="198" name="Path" type="EnemySpider" x="380" y="27.5">
+   <polyline points="0,0 -166,1"/>
+  </object>
+  <object id="199" name="Path" type="EnemySpider" x="439.5" y="43">
+   <polyline points="0,0 -166,1"/>
+  </object>
+  <object id="200" name="Path" type="EnemySpider" x="401.5" y="57.5">
+   <polyline points="0,0 -166,1"/>
+  </object>
+  <object id="202" name="Path" type="EnemySpider" x="520.5" y="116.5">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="203" name="Path" type="EnemySpider" x="511" y="137.5">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="206" name="Path" type="EnemySpider" x="461" y="125">
+   <polyline points="0,0 -166,1"/>
+  </object>
+  <object id="207" name="Path" type="EnemySpider" x="476.5" y="145">
+   <polyline points="0,0 -166,1"/>
+  </object>
+  <object id="208" name="Path" type="EnemySpider" x="538" y="111.5">
+   <polyline points="0,0 -147,72.5"/>
+  </object>
+  <object id="224" name="Path" type="EnemySpider" x="332.042" y="199.97">
+   <polyline points="0,0 -70.447,0"/>
+  </object>
+  <object id="226" name="Path" type="EnemySpider" x="374" y="89">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="227" name="Path" type="EnemySpider" x="345.5" y="71">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="228" name="Path" type="EnemySpider" x="66" y="205">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="240" name="Path" type="EnemySpider" x="186.5" y="54">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="241" name="Path" type="EnemySpider" x="192" y="88">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="242" name="Path" type="EnemySpike" x="196.5" y="64.5">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="243" name="Path" type="EnemySpider" x="350" y="105.5">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="244" name="Path" type="EnemySpike" x="484.5" y="84">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="252" name="Path" type="EnemySpider" x="440.548" y="197.849">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="253" name="Path" type="EnemySpider" x="552.027" y="87.1737">
+   <polyline points="0,0 -210,0"/>
+  </object>
+  <object id="254" name="Path" type="EnemySpider" x="548" y="70">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="255" name="Path" type="EnemySpider" x="273.5" y="97">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="256" name="Path" type="EnemySpider" x="536" y="128.5">
+   <polyline points="0,0 -25,0"/>
+  </object>
+  <object id="273" name="Crab3" x="553.132" y="163" width="72" height="72">
+   <properties>
+    <property name="nextLevel" value="23pathlevel"/>
+   </properties>
+  </object>
+  <object id="275" name="Bomb" x="80.25" y="34.5" width="11.5" height="11"/>
+  <object id="276" name="Bomb" x="82.25" y="102.5" width="11.5" height="11"/>
+  <object id="277" name="Bomb" x="83.25" y="162.5" width="11.5" height="11"/>
+  <object id="279" name="Bear3" x="575.189" y="104.265" width="72" height="72">
+   <properties>
+    <property name="nextLevel" value="24pathlevel"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="edge tiles" width="40" height="16">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAowAAAKMAAACjAAAAowAAAKMAAACjAAAAowAAAKMAAACjAAAAowAAAKMAAACjAAAAowAAAKMAAACjAAAAowAAAKMAAACjAAAAowAAAKMAAACjAAAAowAAAKMAAACjAAAAowAAAKMAAACjAAAAowAAAKMAAACjAAAAowAAAKMAAACjAAAAowAAAKMAAACjAAAAowAAAKMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+  </data>
+ </layer>
+ <objectgroup color="#ff0000" name="collision layer" opacity="0.79">
+  <object id="16" x="0" y="0" width="644" height="16"/>
+  <object id="17" x="-4.70588" y="237.647" width="645.706" height="16"/>
+  <object id="33" x="0.666663" y="0" width="15.3333" height="247.059"/>
+  <object id="272" x="626.333" y="8.4705" width="15.3333" height="247.059"/>
+ </objectgroup>
+</map>
